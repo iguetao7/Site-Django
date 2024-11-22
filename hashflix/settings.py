@@ -24,14 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TOKEN_CSRF = os.getenv('TOKEN_CSRF')
 if TOKEN_CSRF:
     SECRET_KEY = TOKEN_CSRF
-    CSRF_TRUSTED_ORIGINS = ['https://fulfilling-solace-production.up.railway.app', 'https://fulfilling-solace-production.up.railway.app/']
+    CSRF_TRUSTED_ORIGINS = ['https://fulfilling-solace-production.up.railway.app/', 'https://fulfilling-solace-production.up.railway.app/']
 else:
     SECRET_KEY = 'django-insecure-ufql$89628pp41(q6p*%52ag@2ph_^p=ai47jf!b8g)i3o!ept'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://fulfilling-solace-production.up.railway.app', 'https://fulfilling-solace-production.up.railway.app/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://fulfilling-solace-production.up.railway.app/', 'https://fulfilling-solace-production.up.railway.app/', 'localhost', '127.0.0.1']
 
 
 # Application definition
