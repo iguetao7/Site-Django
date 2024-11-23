@@ -27,8 +27,7 @@ if TOKEN_CSRF:
     CSRF_TRUSTED_ORIGINS = ['https://fulfilling-solace-production.up.railway.app']
 else:
     SECRET_KEY = 'django-insecure-ufql$89628pp41(q6p*%52ag@2ph_^p=ai47jf!b8g)i3o!ept'
-print(SECRET_KEY)
-print(TOKEN_CSRF)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
